@@ -4,18 +4,6 @@ var generateBtn = document.querySelector("#generate");{
 
 }
 
-
-
-//random number generation testing
- function randomNumber(max){
-   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-   return Math.floor(Math.random() * Math.floor(max));
- }
- console.log(randomNumber());
-
-
-
-
 // a for loop that can be used to prompt and confirm the users choices. Also working as a click event with button.
   function customizer() {
     prompt("Length of password?");
@@ -27,9 +15,6 @@ var generateBtn = document.querySelector("#generate");{
   for(i=0;i<customizer.length;i++){
     customizer(i);
   }
-
-
-
 
 //the password generator is supposed to take upper, lower, numbers, and specialCharacters as well as the conditional statement and a for loop to make the overall password generator that works when someone clicks on the big red button.
 function passwordGenerator(){
@@ -46,9 +31,6 @@ function passwordGenerator(){
 }
 }
 
-
-
-
 alert(passwordGenerator());
 // Write password to the #password input
 function writePassword() {
@@ -58,9 +40,6 @@ function writePassword() {
   passwordText.value = password;
 
 }
-
-
-
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
