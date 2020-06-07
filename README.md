@@ -1,55 +1,45 @@
-# 03 JavaScript: Password Generator
+# Random-Password-Generator
+By Austin Keener <br>
+<i>These are the terms of installation for this code.<i>
+## Table of Contents
+### 1. Usage <br>
+### 2. License<br>
 
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+link: https://austingraphicandweb.github.io/password-generation-program/
+<hr>
 
-If you are unfamiliar with special characters, take a look at [some examples](https://www.owasp.org/index.php/Password_special_characters).
+## Screenshot
 
-## User Story
+![](/)
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+<hr>
 
-## Acceptance Criteria
 
-```
-GIVEN I need a new, secure password...
+## Usage
+<i>I have created a password generator. This is a computer program that is made to create a random password of any (reasonable) length that will include uppercase, lowercase, numbers, and special characters. It is important to have save information. A good step to take towards having secure information is to have a custom password.<i>
+<hr>
 
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
+## Licensing
+<i>
+MIT License
 
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
+Copyright (c) [2020] [Austin Graphic and Web]
 
-WHEN prompted for the length of the password (use the prompt popup)(build a variable for lowercase uppercase numeric and special characters.)
-THEN I choose a length of at least 8 characters and no more than 128 characters
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-WHEN prompted for character types to include in the password (use the confirm popup. one for each option.)
-THEN I choose lowercase, uppercase, numeric, and/or special characters
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
-
-The following image demonstrates the application functionality:
-
-![password generator demo](./Assets/03-javascript-homework-demo.png)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.<i>
+<hr>
