@@ -31,32 +31,14 @@ function passwordLength(){
 // I am going to create a function to store the choices made about what the user wants the password to be. One option is the use a conditional statement. 
 
 //conditional statement for lowerCase
-if (lowerCase === true){
+function passwordGenerator(){
+  if (lowerCase === true || upperCase === true || numbers === true || specialCharacters === true){
 
 }else {
 
 }
-
-//conditional statement for upperCase
-if (upperCase === true) {
-
-} else {
-
 }
 
-//conditional statement for including numbers
-if (numbers === true) {
-
-} else {
-
-}
-
-//conditional statement for including special characters
-if (specialCharacters === true) {
-
-} else {
-  
-}
 
 // Write password to the #password input
 function writePassword() {
