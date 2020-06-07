@@ -16,5 +16,12 @@ function writePassword() {
 
 }
 
+// prompt and confirm password specifications
+confirm("Uppercase?");
+confirm("Lowercase?");
+confirm("Numbers?");
+confirm("Special Characters?");
+
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
