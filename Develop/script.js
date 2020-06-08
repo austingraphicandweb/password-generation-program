@@ -18,7 +18,7 @@ var generateBtn = document.querySelector("#generate");{
 
   // this conditional statement is supposed to represent the user picking a number between 8 and 128 characters long and will need to be tied to function customizer somehow.
   if (prompt >= 8 || prompt <= 128) {
-
+    alert(math.floor(math.random * math.floor()));
   } else {
     alert("Please revise the length of your password.");
   }
@@ -31,11 +31,17 @@ function passwordGenerator(){
   var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   var specialCharacters = ["~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+", "-", "=", "`", "[", "]", "{", "}", "/",];
   // conditional statement
-  if (lowerCase === true || upperCase === true || numbers === true || specialCharacters === true){
-    alert('');
-} else if (lowerCase === false || upperCase === false || numbers === false || specialCharacters === false) {
-    alert('');
-}
+  if (upperCase){
+    
+  } else if (lowerCase){
+    
+  } else if (numbers){
+    
+  } else if (specialCharacters){
+    
+  } else {
+    alert('please try your inputs again.');
+  }
 }
 
 alert(passwordGenerator());
