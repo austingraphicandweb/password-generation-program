@@ -1,4 +1,3 @@
-  // Assignment Code
   var generateBtn = document.querySelector("#generate");
 
   // determining the length of the passcode
