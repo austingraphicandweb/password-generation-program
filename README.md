@@ -10,7 +10,8 @@ link: https://austingraphicandweb.github.io/password-generation-program/
 
 ## Screenshot
 
-![](/)
+![screenshot](screenshot.png)
+
 
 <hr>
 

@@ -27,13 +27,13 @@
     var userChoice = [];
   // A group of if then statements that determines the users choice.
     if (confirmLowerCase){
-        userChoice = userChoice.concat(lowerCase);
+        userChoice = userChoice.concat(lowerCase && upperCase && numbers && specialCharacters);
     } else if (confirmUpperCase) {
-        userChoice = userChoice.concat(upperCase);
+        userChoice = userChoice.concat(upperCase && lowerCase && numbers && specialCharacters);
     } else if (confirmNumbers) {
-        userChoice = userChoice.concat(numbers);
+        userChoice = userChoice.concat(numbers && lowerCase && upperCase && specialCharacters);
     } else if (confirmSpecialChar) {
-        userChoice = userChoice.concat(specialCharacters);
+        userChoice = userChoice.concat(specialCharacters && numbers && lowerCase && upperCase);
     } else if (confirmLowerCase === false || confirmUpperCase === false || confirmNumbers === false || confirmSpecialChar === false){
         alert("Please choose valid options.");
         return pickPass();
