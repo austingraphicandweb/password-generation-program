@@ -58,9 +58,12 @@
   // go over what line 65 is doing and how it needs to be changed to work fully. 
   var password = "";
   for (i = 0; i < passwordLength; i++) {
-      var randomizer = Math.floor(Math.random()*userChoice.length);
-      var ranIndex = Math.floor(Math.random()* userChoice[randomizer].length);
-      password += userChoice[randomizer][ranIndex];
+    //randomizer grabs a random array selection
+      var randomizer = userChoice[Math.floor(Math.random() * userChoice.length)];
+      //ranIndex grabs a selection from the array 
+      var ranIndex = randomizer[Math.floor(Math.random() * randomizer.length)];
+    // adds a new character to the final password the amount of times that the user specifies
+      password += ranIndex;
   }
   printPass.value = password;
 }
