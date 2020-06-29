@@ -1,8 +1,16 @@
+  /**
+   * Password Generation application
+   */
+ 
+   // insert that final password value you've generated into the DOM, instead of logging it to the console. Look at the way this is done in the writeFile function of the starter files for this homework. You could basically put all the logic of your pickpass function into the generatePassword function of the starter files, and return your generated value at the end of it, and writePassword would do the rest of the work for you.
+
+
   var generateBtn = document.querySelector("#generate");
+  var printPass = document.getElementById('password');
 
   // determining the length of the passcode
   function pickPass() {
-      var passwordLength = prompt("Pick your password length");
+      var passwordLength = parseInt(prompt("Pick your password length"));
       if (passwordLength < 8 || passwordLength > 128){
           alert("Try again.");
           return pickPass();
@@ -10,7 +18,6 @@
           alert("Not a number. Try again.");
           return pickPass();
       }
-      console.log(passwordLength);
 
   // Variables used to confirm information and store the different options available for the user when picking a password.
     var confirmUpperCase = confirm("Uppercase?");
@@ -27,36 +34,35 @@
     var userChoice = [];
   // A group of if then statements that determines the users choice.
     if (confirmLowerCase){
-        userChoice = userChoice.push(lowerCase);
+        userChoice.push(lowerCase);
     }
     
     if (confirmUpperCase) {
-        userChoice = userChoice.push(upperCase);
+       userChoice.push(upperCase);
     }
     
     if (confirmNumbers) {
-        userChoice = userChoice.push(numbers);
+       userChoice.push(numbers);
     }
     
     if (confirmSpecialChar) {
-        userChoice = userChoice.push(specialCharacters);
+       userChoice.push(specialCharacters);
     }
-    
     if (confirmLowerCase === false && confirmUpperCase === false && confirmNumbers === false && confirmSpecialChar === false){
         alert("Please choose valid options.");
         return pickPass();
     }
 
   // At this stage I am going to write a for loop that generates the random password.
+
+  // go over what line 65 is doing and how it needs to be changed to work fully. 
   var password = "";
   for (i = 0; i < passwordLength; i++) {
       var randomizer = Math.floor(Math.random()*userChoice.length);
-      console.log(randomizer);
-      password += userChoice[randomizer];
+      var ranIndex = Math.floor(Math.random()* userChoice[randomizer].length);
+      password += userChoice[randomizer][ranIndex];
   }
-  console.log(password);
-  console.log(userChoice);
-
+  printPass.value = password;
 }
   // Add event listener, which is a method of javascript, to generate button
   generateBtn.addEventListener("click", pickPass);
